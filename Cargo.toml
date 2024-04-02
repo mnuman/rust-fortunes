@@ -1,0 +1,15 @@
+[package]
+name = "rust_fortune"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.5.1"
+actix-web-prom = "0.8.0"
+lazy_static = "1.4.0"
+psutil = "3.3.0"
+rand = "0.8.5"
+serde = { version = "1.0", features = ["derive"] }
+uptime_lib = "0.3.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
