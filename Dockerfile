@@ -4,7 +4,8 @@ WORKDIR /app
 COPY . /app
 RUN cargo build --release
 
-FROM gcr.io/distroless/cc-debian12
+# FROM gcr.io/distroless/cc-debian12
+FROM ubuntu:latest
 COPY --from=build-env /app/target/release/rust_fortune /
 COPY --from=build-env /app/fortunes.txt /
 EXPOSE 8080
